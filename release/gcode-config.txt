@@ -1,0 +1,16 @@
+; START
+G28 ;Home
+G29 ;Level Bed
+G1 Z25.0 F6000 ;Move the platform down 25mm
+G92 E0
+G1 F100 E3
+G92 E0
+
+; END
+M104 S0
+M140 S0
+G92 E1
+G1 E-1 F300
+G0 Z190
+G28 X0 Y0
+M84
